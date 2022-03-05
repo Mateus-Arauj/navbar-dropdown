@@ -1,0 +1,124 @@
+:root{
+    --blue-1 : #21baecec;
+}
+
+
+.navbar{
+    height: 80px;
+    width: 100%;
+    background-color: #1C1C1C;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.logo-nav{
+    display: flex;
+    align-items: center;
+    width: 65px;
+    height: 80%;
+}
+.logo-nav img{
+    position: relative;
+    width: 65px;
+    height: auto;
+}
+
+.nav-menu{
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-gap: 45px;
+    list-style: none;
+    width: 70%;
+    justify-content: end;
+}
+.nav-item{
+    height: 40px;
+    width: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+.nav-item a{
+   font-size: 18px;
+   color: #fff;
+}
+.nav-item:hover{
+    border-bottom:1.5px solid var(--blue-1);
+}
+
+.social-media{
+    width: 10%;
+    display: flex;
+    list-style: none;
+    justify-content: end;
+    align-items: center;
+    height: 100%;
+    margin-left: 20px;
+}
+.instagram,
+.github{
+    display: flex;
+    margin-right: 10px;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 12%;
+}
+.instagram svg path,
+.github svg path{
+    transition: all ease 0.2s;
+}
+.menu-icon{
+    display: none;
+}
+
+@media screen and (max-width: 980px){
+    .navbar{
+        width: 100%;
+    }
+    .logo-nav img{
+        width: 53px;
+    }
+    .nav-menu{
+        padding-top: 20px;
+        display: flex;
+        position: absolute;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        top: 80px;
+        background-color: #242222;
+        left: -100%;
+        width: 100%;
+        height: calc(100% - 80px);
+        grid-gap: 0px;
+        opacity: 0.3;
+        transition: left ease 0.5s, opacity ease 0.5s;
+    }
+    .active{
+        left: 0;
+        opacity: 1;
+    }
+    .nav-item{
+        width: 100%;
+        border-radius: 0;
+        height: 70px;
+        border-bottom: 0.5px solid white;
+        border-top: 0.5px solid white;
+    }
+    .nav-item:hover{
+        background-color: var(--blue-1)
+    }
+    .social-media{
+        display: none;
+    }
+    .menu-icon{
+        display: initial;
+    }
+    .navbar{
+        padding: 0 25px;
+        justify-content: space-between;
+    }
+}
