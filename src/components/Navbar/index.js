@@ -31,27 +31,27 @@ const Navbar = ()=>{
             </div>
             <ul className = {click? "nav-menu active" : "nav-menu"}>
                 <li className="nav-item">
-                    <a>Home</a>
+                    <p>Home</p>
                 </li>
                 <li className="nav-item">
-                <a>Services</a>
+                    <p>Services</p>
                 </li>
                 <li className="nav-item">
-                    <a>About</a>
+                    <p>About</p>
                 </li>
                 <li className="nav-item">
-                    <a>Contact</a>
+                    <p>Contact</p>
                 </li>
 
             </ul>
             <ul className = "social-media">
                 <li>
-                    <a className="instagram" href = "https://www.instagram.com/_mateusaraujoo_/" target="_blank" onMouseOver={(e)=>{Mouseon(e.target)}} onMouseOut = {(e)=>{Mouseout(e.target)}}>
+                    <a className="instagram" href = "https://www.instagram.com/_mateusaraujoo_/" target="_blank" rel="noreferrer" onMouseOver={(e)=>{Mouseon(e.target)}} onMouseOut = {(e)=>{Mouseout(e.target)}}>
                        <InstagramIcon style={{color: "rgb(220,220,220)", fontSize: "30px"}} />
                     </a>
                 </li>
                 <li>
-                    <a className = "github" href = "https://github.com/Mateus-Arauj" target="_blank" onMouseOver={(e)=>{Mouseon(e.target)}} onMouseOut = {(e)=>{Mouseout(e.target)}}>
+                    <a className = "github" href = "https://github.com/Mateus-Arauj" target="_blank" rel="noreferrer" onMouseOver={(e)=>{Mouseon(e.target)}} onMouseOut = {(e)=>{Mouseout(e.target)}}>
                         <GitHubIcon style={{color: "rgb(220,220,220)", fontSize: "30px"}} />
                     </a>
                 </li>
